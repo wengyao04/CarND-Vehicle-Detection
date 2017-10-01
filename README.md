@@ -5,7 +5,7 @@
 <img src="./project_video_output.gif" width="600"/>
 
 ### Histogram of Oriented Gradients (HOG) Features
-Gradients of pixel intensity are important features for shape detection. I use scikit-image `hog()` function with HOG parameters
+Gradients of pixel intensity are important features for shape detection. I use scikit-image `hog()` function with parameters
 ```
 orientation = 9
 pixels_per_cell = 8
