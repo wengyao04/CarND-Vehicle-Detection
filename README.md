@@ -13,7 +13,7 @@ cells_per_block = 2
 ```
 The following plots show HOG features of car image and non-car image.
 
-<img src="./output_images/car_nocar_hogfeatuer.jpg" width="350"/>
+<img src="./output_images/car_nocar_hogfeatuer.jpg" width="450"/>
 
 ### Build a Classifier
 |                  |      channel       |    train accuracy  | test F2-score      |
