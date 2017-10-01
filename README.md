@@ -5,7 +5,7 @@
 <img src="./project_video_output.gif" width="600"/>
 
 ### Histogram of Oriented Gradients (HOG) Features
-Gradients of pixel intensity are important features for shape detection. I use scikit-image `hog()` function with parameters
+Gradients of pixel intensity are important features of shape. I use scikit-image `hog()` function with parameters
 ```
 orientation = 9
 pixels_per_cell = 8
@@ -14,6 +14,9 @@ cells_per_block = 2
 The following plots show HOG features of car image and non-car image.
 
 <img src="./output_images/car_nocar_hogfeatuer.jpg" width="700"/>
+
+### Histogram of Colors
+Color is another features to detect cars. I use `np.histogram()` with 32 bins and range = (0, 256) 
 
 ### Build a Classifier
 |                  |      channel       |    train accuracy  | test F2-score      |
