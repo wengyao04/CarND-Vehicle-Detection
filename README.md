@@ -16,9 +16,16 @@ The following plots show HOG features of car image and non-car image.
 <img src="./output_images/car_nocar_hogfeatuer.jpg" width="700"/>
 
 ### Histogram of Colors
-Color is another features to detect cars. I use `np.histogram()` with 32 bins and range = (0, 256) 
+Color is another features to detect cars. I use `np.histogram()` with 32 bins and range = (0, 256) and resize the image to (32, 32)
 
 ### Build a Classifier
+```
+vehicle images: 8792
+non-vehicle images: 8968
+```
+80% of (vehicle images + non-vehicle images) are used for traning and 20% for testing. I use Linear Support Vector Classification to fit traning data.
+
+
 |                  |      channel       |    train accuracy  | test F2-score      |
 |:----------------:|:------------------:|:------------------:|:------------------:|
 | YCrCb |  ALL | 0.992 | 0.994 |
