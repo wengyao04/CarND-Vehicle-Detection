@@ -73,4 +73,4 @@ Overlapping detections and false positives are removed by heat-map. When procesi
 <img src="./output_images/find_cars_heatmap.jpg" width="500"/>
 
 ### Discussion
-I find that using multi-size sliding windows improve car detection, i.e. `scales=[.75, 1., 1.25, 1.5, 2.]`, for example, when using single size windows (scale=1.5), it fails to find cars in test3.jpg
+I find that using multi-size sliding windows improve car detection, i.e. `scales=[.75, 1., 1.25, 1.5, 2.]`, for example, when using single size windows (scale=1.5), it fails to find cars in `test3.jpg`. 
