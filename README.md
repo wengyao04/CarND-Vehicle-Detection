@@ -23,7 +23,7 @@ Color is another features to detect cars. I use `np.histogram()` with 32 bins an
 vehicle images: 8792
 non-vehicle images: 8968
 ```
-80% of (vehicle images + non-vehicle images) are used for traning and 20% for testing. I use Linear Support Vector Classification to fit traning data.
+80% of (vehicle images + non-vehicle images) are used for traning and 20% for testing. HOG and HOC features are combined, I try different different color space RGB, HSV, LUV, HLS, YUV, YCrCb and different HOG channel. 
 
 
 |                  |      channel       |    train accuracy  | test F2-score      |
