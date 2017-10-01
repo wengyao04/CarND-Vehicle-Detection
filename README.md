@@ -62,7 +62,7 @@ color space: YCrCb
 HOG channel: ALL
 scale = 1.5
 ```
-Apply the classifier on the test images
+Apply the classifier on the test images, it fails to find the car in 
 
 <img src="./output_images/test_find_cars.jpg" width="700"/>
 
