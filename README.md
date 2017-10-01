@@ -53,6 +53,17 @@ non-vehicle images: 8968
 | RGB   |  1   | 0.981 | 0.983 |
 | RGB   |  2   | 0.981 | 0.981 |
 
+The parameters used for car detection
+```
+classifier: LinearSVC
+C = 1
+penalty: L2
+color space: YCrCb
+HOG channel: ALL
+scale = 1.5
+```
+Apply the classifier on the test images
+
 <img src="./output_images/test_find_cars.jpg" width="700"/>
 
 <img src="./output_images/find_cars_heatmap.jpg" width="500"/>
