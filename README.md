@@ -53,7 +53,7 @@ non-vehicle images: 8968
 | RGB   |  1   | 0.981 | 0.983 |
 | RGB   |  2   | 0.981 | 0.981 |
 
-The parameters used for car detection
+The parameters used for car detection are
 ```
 classifier: LinearSVC
 C = 1
@@ -62,8 +62,11 @@ color space: YCrCb
 HOG channel: ALL
 scale = 1.5
 ```
-Apply the classifier on the test images, it fails to find the car in 
+
+### Sliding Window Search
+Apply the classifier on images to perform a sliding window search, each search is specified in a region of interest (i.e 96 x 96), implemented in `find_cars(img, ystart, ystop, scale)`. Test search on the testing-images, see the following
 
 <img src="./output_images/test_find_cars.jpg" width="700"/>
 
+### 
 <img src="./output_images/find_cars_heatmap.jpg" width="500"/>
