@@ -68,5 +68,5 @@ Apply the classifier on images to perform a sliding window search, each search i
 
 <img src="./output_images/test_find_cars.jpg" width="700"/>
 
-### 
+Overlapping detections and false positives are removed by heat-map
 <img src="./output_images/find_cars_heatmap.jpg" width="500"/>
