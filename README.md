@@ -16,14 +16,14 @@ The following plots show HOG features of car image and non-car image.
 <img src="./output_images/car_nocar_hogfeatuer.jpg" width="700"/>
 
 ### Histogram of Colors
-Color is another features to detect cars. I use `np.histogram()` with 32 bins and range = (0, 256) and resize the image to (32, 32)
+Color is another features to detect cars. I use `np.histogram()` with 32 bins and range = (0, 256), and the image is resized to 32 x 32.
 
 ### Build a Classifier
 ```
 vehicle images: 8792
 non-vehicle images: 8968
 ```
-80% of (vehicle images + non-vehicle images) are used for traning and 20% for testing. HOG and HOC features are combined, I try different different color space RGB, HSV, LUV, HLS, YUV, YCrCb and different HOG channel. 
+80% of (vehicle images + non-vehicle images) are used for traning and 20% for testing. `sklearn.svm.LinearSVC` is used as classifier. HOG and HOC features are combined, I try different different color space RGB, HSV, LUV, HLS, YUV, YCrCb and different HOG channel. From the following table, I find that usng all HOG channel always produce better accuracy than using single HOG channel with fixed color space. 
 
 
 |                  |      channel       |    train accuracy  | test F2-score      |
