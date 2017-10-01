@@ -4,8 +4,14 @@
 ### Project Video
 <img src="./project_video_output.gif" width="600"/>
 
-### HOG Features
-
+### Histogram of Oriented Gradients (HOG) Features
+HOG parameters
+```
+orientation = 9
+pixels_per_cell = 8
+cells_per_block = 2
+```
+The following plots show HOG features of car image and non-car image.
 <img src="./output_images/car_nocar_hogfeatuer.jpg" width="350"/>
 
 ### Build a Classifier
