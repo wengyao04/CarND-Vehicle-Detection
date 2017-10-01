@@ -64,9 +64,11 @@ scale = 1.5
 ```
 
 ### Sliding Window Search
-Apply the classifier on images to perform a sliding window search, each search is specified in a region of interest (i.e 96 x 96), implemented in `find_cars(img, ystart, ystop, scale)`. Test search on the testing-images, see the following
+Apply the classifier on images to perform a sliding window search, each search is specified in a region of interest (i.e 96 x 96), implemented in `find_cars(img, ystart, ystop, scale)`. Test sliding winodow search on the testing-images, see the following
 
 <img src="./output_images/test_find_cars.jpg" width="700"/>
 
-Overlapping detections and false positives are removed by heat-map
+Overlapping detections and false positives are removed by heat-map. Apply sliding window search on the project video, the ouput is [project_video_ouput.mp4](https://github.com/wengyao04/CarND-VehicleDetection/blob/master/project_video_output.mp4)
 <img src="./output_images/find_cars_heatmap.jpg" width="500"/>
+
+### Discussion
